@@ -1,0 +1,241 @@
+[0m07:49:01.546189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c5d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae8e2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108487310>]}
+
+
+============================== 07:49:01.549165 | d01079cf-f008-47a5-8386-76e513f30bfd ==============================
+[0m07:49:01.549165 [info ] [MainThread]: Running with dbt=1.7.0
+[0m07:49:01.549570 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m07:49:38.812911 [debug] [MainThread]: Starter project path: /opt/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/include/starter_project
+[0m07:49:38.825870 [info ] [MainThread]: 
+Your new dbt project "dbt_warehouse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m07:49:38.826589 [info ] [MainThread]: Setting up your profile.
+[0m07:53:59.024938 [info ] [MainThread]: Profile dbt_warehouse written to /Users/rckrbnnew/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m07:53:59.037767 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 297.5243, "process_user_time": 2.518271, "process_kernel_time": 1.726351, "process_mem_max_rss": "171278336", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m07:53:59.038538 [debug] [MainThread]: Command `dbt init` succeeded at 07:53:59.038391 after 297.53 seconds
+[0m07:53:59.038976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c5d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108487310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae9a310>]}
+[0m07:53:59.039416 [debug] [MainThread]: Flushing usage events
+[0m07:54:16.287961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a24760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad29ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad8e5b0>]}
+
+
+============================== 07:54:16.290227 | b2c80615-17c8-4f81-802c-d051753c7c3a ==============================
+[0m07:54:16.290227 [info ] [MainThread]: Running with dbt=1.7.0
+[0m07:54:16.290571 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m07:54:16.290966 [info ] [MainThread]: dbt version: 1.7.0
+[0m07:54:16.291167 [info ] [MainThread]: python version: 3.9.19
+[0m07:54:16.291406 [info ] [MainThread]: python path: /opt/anaconda3/envs/py-etl/bin/python
+[0m07:54:16.291652 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m07:54:16.689026 [info ] [MainThread]: Using profiles dir at /Users/rckrbnnew/.dbt
+[0m07:54:16.689386 [info ] [MainThread]: Using profiles.yml file at /Users/rckrbnnew/.dbt/profiles.yml
+[0m07:54:16.689590 [info ] [MainThread]: Using dbt_project.yml file at /Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml
+[0m07:54:16.689837 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m07:54:16.691135 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.43316674, "process_user_time": 2.09656, "process_kernel_time": 1.794544, "process_mem_max_rss": "175554560", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m07:54:16.691587 [debug] [MainThread]: Command `dbt debug` failed at 07:54:16.691498 after 0.43 seconds
+[0m07:54:16.691857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a24760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12fda3370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a258dc0>]}
+[0m07:54:16.692124 [debug] [MainThread]: Flushing usage events
+[0m08:25:56.388616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ea5ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067cd1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10680ec40>]}
+
+
+============================== 08:25:56.391023 | 5c512999-82b6-4d6e-b946-ace3750450fd ==============================
+[0m08:25:56.391023 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:25:56.391430 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:25:56.391868 [info ] [MainThread]: dbt version: 1.7.0
+[0m08:25:56.392078 [info ] [MainThread]: python version: 3.9.19
+[0m08:25:56.392282 [info ] [MainThread]: python path: /opt/anaconda3/envs/py-etl/bin/python
+[0m08:25:56.392473 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m08:25:56.749838 [info ] [MainThread]: Using profiles dir at /Users/rckrbnnew/.dbt
+[0m08:25:56.750253 [info ] [MainThread]: Using profiles.yml file at /Users/rckrbnnew/.dbt/profiles.yml
+[0m08:25:56.750530 [info ] [MainThread]: Using dbt_project.yml file at /Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml
+[0m08:25:56.750798 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:25:56.751924 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.39385793, "process_user_time": 1.766033, "process_kernel_time": 2.052994, "process_mem_max_rss": "175456256", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:25:56.752249 [debug] [MainThread]: Command `dbt debug` failed at 08:25:56.752175 after 0.39 seconds
+[0m08:25:56.752486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103ea5ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12246f8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cd5eb0>]}
+[0m08:25:56.752721 [debug] [MainThread]: Flushing usage events
+[0m08:32:03.101496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11045d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113f8d220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110b9a940>]}
+
+
+============================== 08:32:03.103698 | f4cde0ae-cdaf-4472-b3b7-3de1dd3e4c1b ==============================
+[0m08:32:03.103698 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:32:03.104074 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m08:32:03.104488 [info ] [MainThread]: dbt version: 1.7.0
+[0m08:32:03.104687 [info ] [MainThread]: python version: 3.9.19
+[0m08:32:03.104872 [info ] [MainThread]: python path: /opt/anaconda3/envs/py-etl/bin/python
+[0m08:32:03.105058 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m08:32:03.481717 [info ] [MainThread]: Using profiles dir at /Users/rckrbnnew/.dbt
+[0m08:32:03.482099 [info ] [MainThread]: Using profiles.yml file at /Users/rckrbnnew/.dbt/profiles.yml
+[0m08:32:03.482344 [info ] [MainThread]: Using dbt_project.yml file at /Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml
+[0m08:32:03.482600 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:32:03.483653 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.41513544, "process_user_time": 1.819898, "process_kernel_time": 1.959352, "process_mem_max_rss": "175046656", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:32:03.483956 [debug] [MainThread]: Command `dbt debug` failed at 08:32:03.483885 after 0.42 seconds
+[0m08:32:03.484176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11045d7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x169009e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b95e50>]}
+[0m08:32:03.484405 [debug] [MainThread]: Flushing usage events
+[0m08:34:08.328072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a34850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b8dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106280280>]}
+
+
+============================== 08:34:08.330224 | ab83bad8-8215-4b3c-aaf8-d8babf0fc3c4 ==============================
+[0m08:34:08.330224 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:34:08.330582 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m08:34:08.331007 [info ] [MainThread]: dbt version: 1.7.0
+[0m08:34:08.331205 [info ] [MainThread]: python version: 3.9.19
+[0m08:34:08.331389 [info ] [MainThread]: python path: /opt/anaconda3/envs/py-etl/bin/python
+[0m08:34:08.331569 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m08:34:08.696545 [info ] [MainThread]: Using profiles dir at /Users/rckrbnnew/.dbt
+[0m08:34:08.696908 [info ] [MainThread]: Using profiles.yml file at /Users/rckrbnnew/.dbt/profiles.yml
+[0m08:34:08.697121 [info ] [MainThread]: Using dbt_project.yml file at /Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml
+[0m08:34:08.697424 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:34:08.698528 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.39961788, "process_user_time": 2.232476, "process_kernel_time": 1.565979, "process_mem_max_rss": "175390720", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:34:08.698843 [debug] [MainThread]: Command `dbt debug` failed at 08:34:08.698770 after 0.40 seconds
+[0m08:34:08.699068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a34850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ba9d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b8de20>]}
+[0m08:34:08.699307 [debug] [MainThread]: Flushing usage events
+[0m08:37:03.634017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f35850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f8dcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fa9d90>]}
+
+
+============================== 08:37:03.636186 | 536dd374-317a-4233-b060-c7d2f2d1b924 ==============================
+[0m08:37:03.636186 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:37:03.636535 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:37:03.636978 [info ] [MainThread]: dbt version: 1.7.0
+[0m08:37:03.637186 [info ] [MainThread]: python version: 3.9.19
+[0m08:37:03.637394 [info ] [MainThread]: python path: /opt/anaconda3/envs/py-etl/bin/python
+[0m08:37:03.637588 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m08:37:04.025849 [info ] [MainThread]: Using profiles dir at /Users/rckrbnnew/.dbt
+[0m08:37:04.026210 [info ] [MainThread]: Using profiles.yml file at /Users/rckrbnnew/.dbt/profiles.yml
+[0m08:37:04.026487 [info ] [MainThread]: Using dbt_project.yml file at /Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml
+[0m08:37:04.026802 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:37:04.027898 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.42401084, "process_user_time": 2.402618, "process_kernel_time": 1.503379, "process_mem_max_rss": "173457408", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:37:04.028222 [debug] [MainThread]: Command `dbt debug` failed at 08:37:04.028144 after 0.42 seconds
+[0m08:37:04.028448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f35850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105fa9580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f8de20>]}
+[0m08:37:04.028691 [debug] [MainThread]: Flushing usage events
+[0m08:37:57.040643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110811c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11310fcd0>]}
+
+
+============================== 08:37:57.042903 | 2f1453f7-f9f9-40aa-a6ac-c3d6d5d9c966 ==============================
+[0m08:37:57.042903 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:37:57.043272 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m08:37:57.043676 [info ] [MainThread]: dbt version: 1.7.0
+[0m08:37:57.043877 [info ] [MainThread]: python version: 3.9.19
+[0m08:37:57.044063 [info ] [MainThread]: python path: /opt/anaconda3/envs/py-etl/bin/python
+[0m08:37:57.044245 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m08:37:57.403397 [info ] [MainThread]: Using profiles dir at /Users/rckrbnnew/.dbt
+[0m08:37:57.403763 [info ] [MainThread]: Using profiles.yml file at /Users/rckrbnnew/.dbt/profiles.yml
+[0m08:37:57.403979 [info ] [MainThread]: Using dbt_project.yml file at /Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml
+[0m08:37:57.404228 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m08:37:57.405318 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.39485672, "process_user_time": 2.352534, "process_kernel_time": 1.50212, "process_mem_max_rss": "175030272", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:37:57.405625 [debug] [MainThread]: Command `dbt debug` failed at 08:37:57.405555 after 0.40 seconds
+[0m08:37:57.405850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b4850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113129580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112515eb0>]}
+[0m08:37:57.406080 [debug] [MainThread]: Flushing usage events
+[0m08:38:44.069447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107489760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091a9c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10920f5b0>]}
+
+
+============================== 08:38:44.071960 | 78012e55-708f-4e10-b367-ab1c43ddb3ba ==============================
+[0m08:38:44.071960 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:38:44.072345 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug --config-dir', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m08:38:44.072776 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/rckrbnnew/.dbt
+[0m08:38:44.073704 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.03518175, "process_user_time": 1.038412, "process_kernel_time": 0.092378, "process_mem_max_rss": "106676224", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:38:44.074104 [debug] [MainThread]: Command `dbt debug` succeeded at 08:38:44.074018 after 0.04 seconds
+[0m08:38:44.074342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107489760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091a9c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092034c0>]}
+[0m08:38:44.074590 [debug] [MainThread]: Flushing usage events
+[0m08:40:14.508330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043dd2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d0dbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d39f10>]}
+
+
+============================== 08:40:14.511039 | 23c5c4f7-34c5-4739-8111-79de1ae9946e ==============================
+[0m08:40:14.511039 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:40:14.511400 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug --config-dir', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:40:14.511824 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/rckrbnnew/.dbt
+[0m08:40:14.512615 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.03396425, "process_user_time": 1.047607, "process_kernel_time": 0.102578, "process_mem_max_rss": "105922560", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:40:14.512991 [debug] [MainThread]: Command `dbt debug` succeeded at 08:40:14.512904 after 0.03 seconds
+[0m08:40:14.513215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043dd2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d39a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b701c0>]}
+[0m08:40:14.513437 [debug] [MainThread]: Flushing usage events
+[0m08:41:24.090658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060314c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fb47f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fc8790>]}
+
+
+============================== 08:41:24.093042 | fc24e957-1ef7-4964-8eb6-4eb9fd5526d7 ==============================
+[0m08:41:24.093042 [info ] [MainThread]: Running with dbt=1.7.0
+[0m08:41:24.093395 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/rckrbnnew/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:41:24.093812 [info ] [MainThread]: dbt version: 1.7.0
+[0m08:41:24.094015 [info ] [MainThread]: python version: 3.9.19
+[0m08:41:24.094198 [info ] [MainThread]: python path: /opt/anaconda3/envs/py-etl/bin/python
+[0m08:41:24.094378 [info ] [MainThread]: os info: macOS-14.5-arm64-arm-64bit
+[0m08:41:24.652289 [info ] [MainThread]: Using profiles dir at /Users/rckrbnnew/.dbt
+[0m08:41:24.652733 [info ] [MainThread]: Using profiles.yml file at /Users/rckrbnnew/.dbt/profiles.yml
+[0m08:41:24.652945 [info ] [MainThread]: Using dbt_project.yml file at /Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml
+[0m08:41:24.653431 [info ] [MainThread]: adapter type: snowflake
+[0m08:41:24.653671 [info ] [MainThread]: adapter version: 1.7.0
+[0m08:41:24.653887 [info ] [MainThread]: Configuration:
+[0m08:41:24.654086 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:41:24.654281 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:41:24.654471 [info ] [MainThread]: Required dependencies:
+[0m08:41:24.654698 [debug] [MainThread]: Executing "git --help"
+[0m08:41:24.668125 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:41:24.668872 [debug] [MainThread]: STDERR: "b''"
+[0m08:41:24.669150 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:41:24.669373 [info ] [MainThread]: Connection:
+[0m08:41:24.669630 [info ] [MainThread]:   account: vngkzgp-lv77681
+[0m08:41:24.669819 [info ] [MainThread]:   user: rckrbn
+[0m08:41:24.669997 [info ] [MainThread]:   database: devappdb
+[0m08:41:24.670173 [info ] [MainThread]:   warehouse: xsmall_wh
+[0m08:41:24.670345 [info ] [MainThread]:   role: accountadmin
+[0m08:41:24.670516 [info ] [MainThread]:   schema: my_schema
+[0m08:41:24.670690 [info ] [MainThread]:   authenticator: None
+[0m08:41:24.670863 [info ] [MainThread]:   private_key_path: None
+[0m08:41:24.671047 [info ] [MainThread]:   token: None
+[0m08:41:24.671221 [info ] [MainThread]:   oauth_client_id: None
+[0m08:41:24.671402 [info ] [MainThread]:   query_tag: None
+[0m08:41:24.671585 [info ] [MainThread]:   client_session_keep_alive: False
+[0m08:41:24.671760 [info ] [MainThread]:   host: None
+[0m08:41:24.671932 [info ] [MainThread]:   port: None
+[0m08:41:24.672177 [info ] [MainThread]:   proxy_host: None
+[0m08:41:24.672360 [info ] [MainThread]:   proxy_port: None
+[0m08:41:24.672539 [info ] [MainThread]:   protocol: None
+[0m08:41:24.672729 [info ] [MainThread]:   connect_retries: 1
+[0m08:41:24.672901 [info ] [MainThread]:   connect_timeout: None
+[0m08:41:24.673075 [info ] [MainThread]:   retry_on_database_errors: False
+[0m08:41:24.673251 [info ] [MainThread]:   retry_all: False
+[0m08:41:24.673429 [info ] [MainThread]:   insecure_mode: False
+[0m08:41:24.673603 [info ] [MainThread]:   reuse_connections: None
+[0m08:41:24.674266 [info ] [MainThread]: Registered adapter: snowflake=1.7.0
+[0m08:41:24.698851 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m08:41:24.700120 [debug] [MainThread]: Using snowflake connection "debug"
+[0m08:41:24.700538 [debug] [MainThread]: On debug: select 1 as id
+[0m08:41:24.700824 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:41:25.863714 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m08:41:25.866009 [debug] [MainThread]: On debug: Close
+[0m08:41:25.936516 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:41:25.936961 [info ] [MainThread]: [31m1 check failed:[0m
+[0m08:41:25.937181 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_project.yml> not found
+
+[0m08:41:25.938385 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.8759211, "process_user_time": 2.030793, "process_kernel_time": 2.074931, "process_mem_max_rss": "184565760", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m08:41:25.938713 [debug] [MainThread]: Command `dbt debug` failed at 08:41:25.938638 after 1.88 seconds
+[0m08:41:25.938939 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:41:25.939158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060314c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e8a37c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e9c8850>]}
+[0m08:41:25.939414 [debug] [MainThread]: Flushing usage events
