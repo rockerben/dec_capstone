@@ -1,0 +1,10 @@
+dagster
+dagster-cloud
+pandas
+pg8000
+sqlalchemy
+dagster-airbyte
+
+[dev]
+dagster-webserver
+pytest
