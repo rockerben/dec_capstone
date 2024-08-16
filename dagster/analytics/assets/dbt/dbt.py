@@ -6,13 +6,25 @@ from dagster import AssetExecutionContext
 from dagster_dbt import DbtCliResource, dbt_assets
 
 
-dbt_project_dir = Path(
-    "/Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_warehouse").resolve()
-dbt_warehouse_resource = DbtCliResource(project_dir=os.fspath(dbt_project_dir))
+# Resolve path dynamically
+
+from pathlib import Path
+# Calculate the path relative to the script's location
+dbt_project_dir = Path(__file__).resolve().parent.joinpath(
+    "../../../dbt_warehouse").resolve()
+
+print(f"Resolved dbt_project_dir: {dbt_project_dir}")
+
+# Configure dbt project resource
+dbt_warehouse_resource = DbtCliResource(project_dir=str(dbt_project_dir))
+
+# dbt_project_dir = Path(
+#     "/Users/rckrbnnew/Desktop/capstone/dec_capstone/dbt_warehouse").resolve()
+# dbt_warehouse_resource = DbtCliResource(project_dir=os.fspath(dbt_project_dir))
 
 # # configure dbt project resource
 # dbt_project_dir = Path(__file__).joinpath(
-#     "..", "..", "..", "dbt_warehouse").resolve()
+#     "..", "..",  "..", "..", "dbt_warehouse").resolve()
 # print(dbt_project_dir)
 # dbt_warehouse_resource = DbtCliResource(project_dir=os.fspath(dbt_project_dir))
 
