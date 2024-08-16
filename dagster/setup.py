@@ -9,7 +9,10 @@ setup(
         "pandas",
         "pg8000",
         "sqlalchemy",
-        "dagster-airbyte"
+        "dagster-airbyte",
+        "dagster-dbt",
+        "dbt-core==1.7.2",
+        "dbt-snowflake==1.7.2"
     ],
     extras_require={"dev": ["dagster-webserver", "pytest"]},
 )

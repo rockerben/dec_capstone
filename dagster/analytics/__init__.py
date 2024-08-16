@@ -1,13 +1,15 @@
 from dagster import Definitions, load_assets_from_modules
 from analytics.assets.airbyte.airbyte import airbyte_assets
-
+from analytics.assets.dbt.dbt import dbt_warehouse, dbt_warehouse_resource
 
 from . import assets
 
 all_assets = load_assets_from_modules([assets])
 
 defs = Definitions(
-    assets=[airbyte_assets]
+    assets=[airbyte_assets, dbt_warehouse],
+    resources={"dbt_warehouse_resource": dbt_warehouse_resource}
+
 
 )
 

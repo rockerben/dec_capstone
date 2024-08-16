@@ -22,12 +22,12 @@ SELECT
     DevelopmentSubjectToSICFlag,
     AssessmentExhibitionStartDate,
     ModificationApplicationNumber,
-    PlanningPortalApplicationNumber,
-    VariationToDevelopmentStandardsApprovedFlag
+    PlanningPortalApplicationNumber
+    --VariationToDevelopmentStandardsApprovedFlag
 
 
 
 
     
-FROM {{ source('development_applications', "ld_online_das") }}
+FROM {{ source('developmentapplications', "onlinedav5") }}
 

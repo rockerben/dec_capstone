@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: development_applications
+  - name: developmentapplications
     database: devappdb
     schema: my_schema
     tables:
-      - name: "ld_online_das"
+      - name: onlinedav5
