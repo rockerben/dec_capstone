@@ -1,5 +1,5 @@
 from dagster import Definitions, load_assets_from_modules
-from analytics.assets import airbyte_assets
+from analytics.assets.airbyte.airbyte import airbyte_assets
 
 
 from . import assets
@@ -8,7 +8,7 @@ all_assets = load_assets_from_modules([assets])
 
 defs = Definitions(
     assets=[airbyte_assets]
-    assets=all_assets,
+
 )
 
 
