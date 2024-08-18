@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_subdivision_type
+    description: "Dimension table for types of subdivisions in the applications"
+    columns:
+      - name: subdivision_type_id
+        description: "Surrogate key for subdivision type"
+        tests:
+          - unique
+          - not_null
+      - name: subdivision_type
+        description: "Type of subdivision"

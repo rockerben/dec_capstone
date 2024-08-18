@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: dim_council
+    description: "Dimension table for councils, including location details for development applications."
+    columns:
+      - name: council_id
+        description: "Surrogate key for council, generated based on CouncilName"
+        tests:
+          - unique
+          - not_null
+
+      - name: CouncilName
+        description: "The name of the council"
+
+      - name: FullAddress
+        description: "The full address associated with the council"
+
+      - name: Postcode
+        description: "The postcode of the council's location"
+
+      - name: State
+        description: "The state where the council is located"
+
+      - name: StreetName
+        description: "Street name of the council's location"
+
+      - name: StreetNumber1
+        description: "Street number of the council's location"
+
+      - name: StreetType
+        description: "Street type (e.g., Road, Street, etc.) of the council's location"
+
+      - name: Suburb
+        description: "Suburb where the council is located"
+
+      - name: X
+        description: "X coordinate (longitude) of the council's location"
+
+      - name: Y
+        description: "Y coordinate (latitude) of the council's location"
+
+      - name: created_at
+        description: "Timestamp of when the record was created"

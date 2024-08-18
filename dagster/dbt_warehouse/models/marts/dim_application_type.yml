@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_application_type
+    description: "Dimension table for different types of development applications"
+    columns:
+      - name: application_type_id
+        description: "Surrogate key for application type"
+        tests:
+          - unique
+          - not_null
+      - name: application_type
+        description: "Type of development application"

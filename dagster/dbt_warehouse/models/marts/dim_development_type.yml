@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_development_type
+    description: "Dimension table for types of developments in the applications"
+    columns:
+      - name: development_type_id
+        description: "Surrogate key for development type"
+        tests:
+          - unique
+          - not_null
+      - name: development_type
+        description: "Type of development"

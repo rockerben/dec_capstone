@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_application_status
+    description: "Dimension table for status of the development applications"
+    columns:
+      - name: application_status_id
+        description: "Surrogate key for application status"
+        tests:
+          - unique
+          - not_null
+      - name: application_status
+        description: "Status of the application"

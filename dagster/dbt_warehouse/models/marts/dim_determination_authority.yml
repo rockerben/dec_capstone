@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_determination_authority
+    description: "Dimension table for determination authorities responsible for approvals"
+    columns:
+      - name: determination_authority_id
+        description: "Surrogate key for determination authority"
+        tests:
+          - unique
+          - not_null
+      - name: determination_authority
+        description: "Name of the determination authority"
