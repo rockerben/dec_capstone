@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: fact_application_summary
+    description: "Fact table summarizing development applications by council, application type, and status."
+    columns:
+      - name: council_id
+        description: "Foreign key to the dim_council table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_council')
+              field: council_id
+
+      - name: application_type_id
+        description: "Foreign key to the dim_application_type table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_application_type')
+              field: application_type_id
+
+      - name: application_status_id
+        description: "Foreign key to the dim_application_status table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_application_status')
+              field: application_status_id
+
+      - name: total_cost_of_development
+        description: "Total cost of the development projects for this grouping"
+        tests:
+          - not_null
+
+      - name: total_new_dwellings
+        description: "Total number of new dwellings for this grouping"
+        tests:
+          - not_null
+
+      - name: total_existing_lots
+        description: "Total number of existing lots for this grouping"
+        tests:
+          - not_null
+
+      - name: total_proposed_lots
+        description: "Total number of proposed lots for this grouping"
+        tests:
+          - not_null
+
+      - name: created_at
+        description: "Timestamp of when the record was created"

@@ -10,4 +10,4 @@ SELECT
     {{ dbt_utils.generate_surrogate_key(['application_type']) }} AS application_type_id,
     application_type,
     CURRENT_TIMESTAMP() AS created_at
-FROM source;
+FROM source

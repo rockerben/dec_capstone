@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: fact_comprehensive_development
+    description: "Comprehensive fact table that integrates all dimensions and key metrics for development applications."
+    columns:
+      - name: council_id
+        description: "Foreign key to the dim_council table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_council')
+              field: council_id
+
+      - name: application_type_id
+        description: "Foreign key to the dim_application_type table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_application_type')
+              field: application_type_id
+
+      - name: application_status_id
+        description: "Foreign key to the dim_application_status table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_application_status')
+              field: application_status_id
+
+      - name: development_type_id
+        description: "Foreign key to the dim_development_type table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_development_type')
+              field: development_type_id
+
+      - name: subdivision_type_id
+        description: "Foreign key to the dim_subdivision_type table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_subdivision_type')
+              field: subdivision_type_id
+
+      - name: determination_authority_id
+        description: "Foreign key to the dim_determination_authority table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_determination_authority')
+              field: determination_authority_id
+
+      - name: total_cost_of_development
+        description: "Total cost of the development projects for this grouping"
+        tests:
+          - not_null
+
+      - name: avg_number_of_storeys
+        description: "Average number of storeys for the development projects in this grouping"
+        tests:
+          - not_null
+
+      - name: total_existing_lots
+        description: "Total number of existing lots for the developments in this grouping"
+        tests:
+          - not_null
+
+      - name: total_new_dwellings
+        description: "Total number of new dwellings for the developments in this grouping"
+        tests:
+          - not_null
+
+      - name: total_proposed_lots
+        description: "Total number of proposed lots for the developments in this grouping"
+        tests:
+          - not_null
+
+      - name: vpa_flag_count
+        description: "Count of applications that are accompanied by VPA (Voluntary Planning Agreement)"
+
+      - name: subdivision_proposed_count
+        description: "Count of applications that have subdivision proposed"
+
+      - name: epi_variation_proposed_count
+        description: "Count of applications with proposed variations to the Environmental Planning Instrument (EPI)"
+
+      - name: sic_flag_count
+        description: "Count of developments subject to the Special Infrastructure Contribution (SIC)"
+
+      - name: created_at
+        description: "Timestamp of when the record was created"

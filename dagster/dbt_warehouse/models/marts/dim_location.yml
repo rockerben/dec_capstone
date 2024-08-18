@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: dim_location
+    description: "A dimension table to store location details flattened from the LOCATION JSON structure."
+    columns:
+      - name: location_id
+        description: "A unique identifier for each location, generated as a surrogate key."
+        tests:
+          - unique
+          - not_null
+
+      - name: full_address
+        description: "The full address of the development location, as provided in the JSON structure."
+        tests:
+          - not_null
+
+      - name: lot_number
+        description: "The lot number associated with the property."
+
+      - name: plan_label
+        description: "The plan label corresponding to the lot number."
+
+      - name: postcode
+        description: "The postal code of the development location."
+        tests:
+          - not_null
+
+      - name: state
+        description: "The state in which the development location is situated."
+
+      - name: street_name
+        description: "The name of the street for the development location."
+        tests:
+          - not_null
+
+      - name: street_number
+        description: "The number of the building on the street."
+
+      - name: street_type
+        description: "The type of street (e.g., ROAD, AVENUE) for the location."
+
+      - name: suburb
+        description: "The suburb or locality in which the development is located."
+        tests:
+          - not_null
+
+      - name: longitude
+        description: "The longitude coordinate of the location."
+
+      - name: latitude
+        description: "The latitude coordinate of the location."
+
+      - name: created_at
+        description: "Timestamp of when the record was created."

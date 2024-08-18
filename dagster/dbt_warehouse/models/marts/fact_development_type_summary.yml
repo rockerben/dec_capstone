@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: fact_development_type_summary
+    description: "Fact table summarizing development types, subdivision types, and determination authorities."
+    columns:
+      - name: council_id
+        description: "Foreign key to the dim_council table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_council')
+              field: council_id
+
+      - name: development_type_id
+        description: "Foreign key to the dim_development_type table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_development_type')
+              field: development_type_id
+
+      - name: subdivision_type_id
+        description: "Foreign key to the dim_subdivision_type table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_subdivision_type')
+              field: subdivision_type_id
+
+      - name: determination_authority_id
+        description: "Foreign key to the dim_determination_authority table"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_determination_authority')
+              field: determination_authority_id
+
+      - name: avg_number_of_storeys
+        description: "Average number of storeys for this grouping"
+        tests:
+          - not_null
+
+      - name: total_cost_of_development
+        description: "Total cost of the development projects for this grouping"
+        tests:
+          - not_null
+
+      - name: created_at
+        description: "Timestamp of when the record was created"
