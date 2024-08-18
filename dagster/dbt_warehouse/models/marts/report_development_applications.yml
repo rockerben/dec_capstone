@@ -1,0 +1,120 @@
+version: 2
+
+models:
+  - name: report_development_applications
+    description: "A denormalized table containing all relevant information from development applications, including council, application type, development type, and key metrics."
+    columns:
+      - name: council_id
+        description: "Surrogate key for council from dim_council table"
+        tests:
+          - not_null
+
+      - name: application_type_id
+        description: "Surrogate key for application type from dim_application_type table"
+        tests:
+          - not_null
+
+      - name: application_status_id
+        description: "Surrogate key for application status from dim_application_status table"
+        tests:
+          - not_null
+
+      - name: development_type_id
+        description: "Surrogate key for development type from dim_development_type table"
+        tests:
+          - not_null
+
+      - name: subdivision_type_id
+        description: "Surrogate key for subdivision type from dim_subdivision_type table"
+        tests:
+          - not_null
+
+      - name: determination_authority_id
+        description: "Surrogate key for determination authority from dim_determination_authority table"
+        tests:
+          - not_null
+
+      - name: CouncilName
+        description: "Name of the council responsible for the development application"
+
+      - name: FullAddress
+        description: "Full address of the location of the development"
+
+      - name: Postcode
+        description: "Postcode of the location of the development"
+
+      - name: State
+        description: "State where the development is located"
+
+      - name: StreetName
+        description: "Street name of the development location"
+
+      - name: StreetNumber1
+        description: "Street number of the development location"
+
+      - name: StreetType
+        description: "Street type (e.g., Road, Street, etc.) of the development location"
+
+      - name: Suburb
+        description: "Suburb of the development location"
+
+      - name: X
+        description: "X coordinate (longitude) of the development location"
+
+      - name: Y
+        description: "Y coordinate (latitude) of the development location"
+
+      - name: application_type
+        description: "Type of the application"
+
+      - name: application_status
+        description: "Status of the application"
+
+      - name: development_type
+        description: "Type of development for the application"
+
+      - name: subdivision_type
+        description: "Type of subdivision for the development application"
+
+      - name: determination_authority
+        description: "Determination authority responsible for the development approval"
+
+      - name: cost_of_development
+        description: "Cost of the development in dollars"
+        tests:
+          - not_null
+
+      - name: number_of_storeys
+        description: "Number of storeys in the development"
+        tests:
+          - not_null
+
+      - name: number_of_existing_lots
+        description: "Number of existing lots in the development"
+        tests:
+          - not_null
+
+      - name: number_of_new_dwellings
+        description: "Number of new dwellings proposed in the development"
+        tests:
+          - not_null
+
+      - name: number_of_proposed_lots
+        description: "Number of proposed lots in the development"
+        tests:
+          - not_null
+
+      - name: accompanied_by_vpa
+        description: "Flag indicating if the development is accompanied by a Voluntary Planning Agreement (VPA)"
+
+      - name: subdivision_proposed
+        description: "Flag indicating if the development proposes a subdivision"
+
+      - name: epi_variation_proposed
+        description: "Flag indicating if the development proposes variations to the Environmental Planning Instrument (EPI)"
+
+      - name: development_subject_to_sic
+        description: "Flag indicating if the development is subject to a Special Infrastructure Contribution (SIC)"
+
+      - name: created_at
+        description: "Timestamp of when the record was created"
