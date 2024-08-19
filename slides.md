@@ -1,4 +1,4 @@
-### CAPSTONE: Real-Time Development Application Data Pipeline for NSW Council Insights
+### CAPSTONE: Real-Time Development Applications (DAs) in NSW
 
 | Author                                          |
 | ----------------------------------------------- |
