@@ -139,7 +139,9 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 
 3. **Create a Git Repo**
 
-&nbsp; 4. **Create a virtual enviroment**
+&nbsp;
+
+4. **Create a virtual enviroment**
 
 - dagster requirements
   - conda create -n dagster python=3.11
