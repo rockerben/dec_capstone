@@ -151,7 +151,7 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 
 &nbsp; 5. **Scaffold a dagster project**
 
-    - 2024-04-bootcamp/10-dagster/1/01-ins-ops-jobs/instruction/README.md
+- 2024-04-bootcamp/10-dagster/1/01-ins-ops-jobs/instruction/README.md
 
 &nbsp;
 
@@ -186,18 +186,18 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
     &nbsp;
 18. **_Other stuff_**
 
-        - Documentation
-        - Solution Architecture
-        - Project Presentation Materials
+    - Documentation
+    - Solution Architecture
+    - Project Presentation Materials
 
     &nbsp;
 
 19. To do:
 
-        - Dagster deepdive
-        - Data Vault deepdive
-        - Incremental Models
-        - Data Testing
+    - Dagster deepdive
+    - Data Vault deepdive
+    - Incremental Models
+    - Data Testing
 
     &nbsp;
 
