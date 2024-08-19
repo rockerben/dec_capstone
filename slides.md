@@ -152,13 +152,15 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 &nbsp; 5. **Scaffold a dagster project**
 
     - 2024-04-bootcamp/10-dagster/1/01-ins-ops-jobs/instruction/README.md
-      &nbsp;
+
+&nbsp;
 
 6.  **Scaffold a dbt project**
 
     - Video reference: 20240618 @40:00 minute mark
     - 2024-04-bootcamp/06-snowflake-dbt/3/01-evr-dbt-setup/instruction/README.md
-      &nbsp;
+
+&nbsp;
 
 7.  **_create 1 dbt model and run_**
     &nbsp;
