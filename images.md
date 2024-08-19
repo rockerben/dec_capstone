@@ -48,15 +48,29 @@
 
 - [GIT Repository](https://github.com/rockerben/dec_capstone/)
 
+&nbsp;
 | 4. Create a virtual enviroment |
 | ------------------------------ |
 
 - dagster requirements
-  - conda create -n dagster python=3.11
-  - conda activate dagster
+  <pre>
+
+```bash
+conda create -n dagster python=3.11
+conda activate dagster
+```
+
+</pre>
+
 - dbt requirements
-  - pip install dbt-core==1.7.0
-  - pip install dbt-snowflake==1.7.0
+  <pre>
+
+```bash
+pip install dbt-core==1.7.0
+pip install dbt-snowflake==1.7.0
+```
+
+</pre>
 
 | 5. Scaffold a dagster project |
 | ----------------------------- |
@@ -72,86 +86,83 @@
 | 7. _create 1 dbt model and run_ |
 | ------------------------------- |
 
-![airbyte8](docs/airbyte8.png)
+![dbt_model](docs/dbt_model.png)
 &nbsp;
 
 | 8. _configure dbt-dagster integration_ |
 | -------------------------------------- |
 
-![airbyte8](docs/airbyte8.png)
+![dbtdagster](docs/dbtdagster.png)
 &nbsp;
 
 | 9. _test dagster_ |
 | ----------------- |
 
-![airbyte8](docs/airbyte8.png)
-&nbsp;
+<pre>
+cd dagster
+pip install -e ".[dev]"
+</pre>
 
 | 10. _build dbt dim models_ |
 | -------------------------- |
 
-![airbyte8](docs/airbyte8.png)
-&nbsp;
-
 | 11. _build dbt fact models_ |
 | --------------------------- |
-
-![airbyte8](docs/airbyte8.png)
-&nbsp;
 
 | 12. _test run dbt models_ |
 | ------------------------- |
 
-![airbyte8](docs/airbyte8.png)
-&nbsp;
-
 | 13. _build the one big table_ |
 | ----------------------------- |
-
-![airbyte8](docs/airbyte8.png)
-&nbsp;
 
 | 14. _setup dagster-airbyte integration_ |
 | --------------------------------------- |
 
-![airbyte8](docs/airbyte8.png)
-&nbsp;
-
-| 15. _setup dagster-dbt integration_ |
-| ----------------------------------- |
-
-![airbyte8](docs/airbyte8.png)
-&nbsp;
-
-| 16. _test run local dagster_ |
+| 15. _test run local dagster_ |
 | ---------------------------- |
 
-![airbyte8](docs/airbyte8.png)
+![dagm1](docs/dagster_materialize1.png)
+&nbsp;
+![dagm2](docs/dagster_materialize2.png)
+&nbsp;
+![dagm3](docs/dagster_materialize3.png)
+&nbsp;
+![dagm4](docs/dagster_materialize4.png)
+&nbsp;
+![dagm5](docs/dagster_ui1.png)
+&nbsp;
+![dagm6](docs/dagster_assets.png)
+&nbsp;
+![dagm1](docs/dagster_assets2.png)
 &nbsp;
 
-| 17. _setup dagster cloud_ |
+| 16. _setup dagster cloud_ |
 | ------------------------- |
 
-![airbyte8](docs/airbyte8.png)
+![dagster2](docs/dagster_cloud_error2.png)
+&nbsp;
+![dagster3](docs/dagster_cloud_error3.png)
+&nbsp;
+![dagster4](docs/dagster_cloud_error4.png)
 &nbsp;
 
-| 18. _Other stuff_ |
+| 17. _Other stuff_ |
 | ----------------- |
 
 - Documentation
 - Solution Architecture
 - Project Presentation Materials
 
-| 19. _To do_ |
-| ----------- |
+| _To do_ |
+| ------- |
 
 - Dagster deepdive
 - Data Vault deepdive
 - Incremental Models
 - Data Testing
 
-| 20. _To be continued:_ |
-| ---------------------- |
+| _To be continued:_ |
+| ------------------ |
 
 - CICD
 - Kafka
