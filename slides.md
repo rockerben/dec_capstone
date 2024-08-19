@@ -151,7 +151,7 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 
 &nbsp;
 
-1. **Scaffold a dagster project**
+5. **Scaffold a dagster project**
 
 - 2024-04-bootcamp/10-dagster/1/01-ins-ops-jobs/instruction/README.md
 
