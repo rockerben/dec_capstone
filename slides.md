@@ -12,7 +12,7 @@ This project **boldly ventures where no council has gone before**. By integratin
 
 Imagine the council as the ultimate **urban planning ninja**, effortlessly slicing through data in real-time to stay miles ahead of the competition. With this project, not only will the council uncover valuable insights and generate metrics so sharp they could cut through red tape, but they'll also have actionable intelligence that makes decision-making as easy as pie.
 
-Think of it as a **seamless integration extravaganza**, with automated data updates that practically run themselves, and visualizations so intuitive, even your grandmother could use them (and she’d probably have some good ideas about zoning too). In short, this project will ensure that the council isn’t just keeping up with the times—they’re **setting the pace** in the high-stakes game of **urban planning and development monitoring**. Stay ahead of the curve? More like **rewriting the curve**.
+Think of automated data updates that practically run themselves, and visualizations so intuitive, even your grandmother could use them (and she’d probably have some good ideas about zoning too). In short, this project will ensure that the council isn’t just keeping up with the times—they’re **setting the pace** in the high-stakes game of **urban planning and development monitoring**. Stay ahead of the curve? More like **rewriting the curve**.
 
 ---
 
