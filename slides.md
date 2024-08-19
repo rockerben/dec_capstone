@@ -141,48 +141,43 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 
 &nbsp;
 
-4. **Create a virtual enviroment**
+4.  **Create a virtual enviroment** - dagster requirements - conda create -n dagster python=3.11 - conda activate dagster - dbt requirements - pip install dbt-core==1.7.0 - pip install dbt-snowflake==1.7.0
+    &nbsp;
 
-- dagster requirements
-  - conda create -n dagster python=3.11
-  - conda activate dagster
-- dbt requirements - pip install dbt-core==1.7.0 - pip install dbt-snowflake==1.7.0
-  &nbsp;
-
-5.  **Scaffold a dagster project**
+1.  **Scaffold a dagster project**
 
     - 2024-04-bootcamp/10-dagster/1/01-ins-ops-jobs/instruction/README.md
       &nbsp;
 
-6.  **Scaffold a dbt project**
+1.  **Scaffold a dbt project**
 
     - Video reference: 20240618 @40:00 minute mark
     - 2024-04-bootcamp/06-snowflake-dbt/3/01-evr-dbt-setup/instruction/README.md
       &nbsp;
 
-7.  **_create 1 dbt model and run_**
+1.  **_create 1 dbt model and run_**
     &nbsp;
-8.  **_configure dbt-dagster integration_**
+1.  **_configure dbt-dagster integration_**
     &nbsp;
-9.  **_test dagster_**
+1.  **_test dagster_**
     &nbsp;
-10. **_build dbt dim models_**
+1.  **_build dbt dim models_**
     &nbsp;
-11. **_build dbt fact models_**
+1.  **_build dbt fact models_**
     &nbsp;
-12. **_test run dbt models_**
+1.  **_test run dbt models_**
     &nbsp;
-13. **_build the one big table_**
+1.  **_build the one big table_**
     &nbsp;
-14. **_setup dagster-airbyte integration_**
+1.  **_setup dagster-airbyte integration_**
     &nbsp;
-15. **_setup dagster-dbt integration_**
+1.  **_setup dagster-dbt integration_**
     &nbsp;
-16. **_test run dagster_**
+1.  **_test run dagster_**
     &nbsp;
-17. **_setup dagster cloud_**
+1.  **_setup dagster cloud_**
     &nbsp;
-18. **_Other stuff_**
+1.  **_Other stuff_**
 
         - Documentation
         - Solution Architecture
@@ -190,7 +185,7 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 
     &nbsp;
 
-19. To do:
+1.  To do:
 
         - Dagster deepdive
         - Data Vault deepdive
@@ -199,7 +194,7 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 
     &nbsp;
 
-20. To be continued:
+1.  To be continued:
     - CICD
     - Kafka learning
     - Databricks/spark learning
