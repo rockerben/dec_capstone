@@ -153,6 +153,28 @@ pip install -e ".[dev]"
 - Solution Architecture
 - Project Presentation Materials
 
+| _artifacts_ |
+| ----------- |
+
+![artfct1](docs/snowflake1.png)
+&nbsp;
+![artfct2](docs/snowflake2.png)
+&nbsp;
+![artfct3](docs/snowflake3.png)
+&nbsp;
+![artfct4](docs/snowflake4.png)
+&nbsp;
+![artfct5](docs/snowflake5.png)
+&nbsp;
+![artfct6](docs/snowflake6.png)
+&nbsp;
+![artfct7](docs/snowflake7.png)
+&nbsp;
+![artfct8](docs/snowflake8.png)
+&nbsp;
+![artfct9](docs/snowflake9.png)
+&nbsp;
+
 | _To do_ |
 | ------- |
 
