@@ -107,6 +107,7 @@ pip install dbt-snowflake==1.7.0
 <pre>
 cd dagster
 pip install -e ".[dev]"
+dagster dev
 </pre>
 
 | 10. _build dbt dim models_ |
