@@ -1,4 +1,4 @@
-# Modern ELT demo
+# 🚀 **Modern ELT Demo** 🚀
 
 <img src="docs/dec-logo.png" width="250" height="250">
 
@@ -7,69 +7,90 @@
 ![snowflake](https://img.shields.io/badge/snowflake-database-blue)
 ![dagster](https://img.shields.io/badge/dagster-orchestrate-blue)
 
-## Introduction
+---
 
-his is a demo project to create an ELT pipeline using airbyte, dbt, snowflake and dagster.
+## 🌟 **Introduction**
+
+Welcome to the **Modern ELT Demo Project**, where we create a cutting-edge ELT pipeline using **Airbyte**, **dbt**, **Snowflake**, and **Dagster**. 🌐
 
 ![docs/elt.drawio.png](docs/elt.drawio.png)
 
-- [airbyte](https://docs.airbyte.com/)
+🔗 **Related Docs:**
+
+- [Airbyte](https://docs.airbyte.com/)
 - [dbt](https://docs.getdbt.com/docs/introduction)
 - [AWS](https://aws.amazon.com)
-- [snowflake](https://docs.snowflake.com/en/)
-- [dagster](https://docs.dagster.io/getting-started)
+- [Snowflake](https://docs.snowflake.com/en/)
+- [Dagster](https://docs.dagster.io/getting-started)
 
-## Getting started
+---
 
-1. Create a new snowflake account [here](https://signup.snowflake.com/)
+## 🛠️ **Getting Started**
 
-2. Run the SQL code [snowflake_airbyte_setup.sql](integration/destination/snowflake_airbyte_setup.sql) to configure an Airbyte account in Snowflake
+1. **Create a Snowflake Account**: Sign up [here](https://signup.snowflake.com/) ❄️
 
-3. Export the following environment variables
+2. **Run SQL Setup**: Configure Airbyte with Snowflake by running the SQL script [snowflake_airbyte_setup.sql](integration/destination/snowflake_airbyte_setup.sql) 📜
 
-   ```
+3. **Set Environment Variables**: Export the following variables to your environment 🌍
+
+   ```bash
    export AIRBYTE_PASSWORD=your_snowflake_password_for_airbyte_account
-   export SNOWFLAKE_ACCOUNT_ID=your_snowflake_password
-   ```
-
-4. Install the python dependencies
+   export SNOWFLAKE_ACCOUNT_ID=your_snowflake_account_id
 
    ```
-   pip install -r requirements.txt
-   ```
 
-5. Create the mock source database by:
-   - Install [postgresql](https://www.postgresql.org/)
-   - Create a new database in your localhost called `dvdrental`
-   - Unzip [dvdrental.zip](integration/source/dvdrental.zip)
-   - Use PgAdmin4 to [restore dvdrental](https://www.pgadmin.org/docs/pgadmin4/development/restore_dialog.html)
+4. 🐍 **Install Python Dependencies**
 
-## Using airbyte
+Make sure to install all necessary Python packages before proceeding!
 
-1. Create a source for the postgresql database `dvdrental`
-   - host: `host.docker.internal`
-2. Create a destination for the Snowflake database
-3. Create a connection between `dvdrental` and `snowflake`
-   - Namespace Custom Format: `<your_destination_schema>`
-4. Run the sync job
+###### pip install requirements.txt
 
-## Using snowflake
+5.  🐘 **Create the Mock Source Database**
 
-1. Log in to your snowflake account
-2. Go to `worksheets` > `+ worksheet`
-3. On the top right, select the role `ACCOUNTADMIN.AIRBYTE_WAREHOUSE`.
-4. On the top left of the worksheet, select `AIRBYTE_DATABASE.AIRBYTE_SCHEMA`
-5. Query one of the synced tables from airbyte e.g. `select * from customer`
+To set up the **PostgreSQL** database:
 
-## Using dbt
+- Install [PostgreSQL](https://www.postgresql.org/) 📥
+- Create a new database on your localhost called `dvdrental` 🗃️
+- Unzip the file [dvdrental.zip](integration/source/dvdrental.zip) 📂
+- Use PgAdmin4 to [restore dvdrental](https://www.pgadmin.org/docs/pgadmin4/development/restore_dialog.html) 🔧
 
-1. `cd` to `dagster/dbt_warehouse`
-2. Execute the command `dbt docs generate` and `dbt docs serve` to create the dbt docs and view the lineage graph
+---
+
+### 🌐 **Using Airbyte**
+
+1. **Create a source** for the PostgreSQL database `dvdrental` 📊
+   - Host: `host.docker.internal` 💻
+2. **Create a destination** for your Snowflake database ❄️
+3. **Establish a connection** between `dvdrental` and `snowflake` 🔄
+   - Namespace Custom Format: `<your_destination_schema>` 📁
+4. **Run the sync job** to transfer data ⚙️
+
+---
+
+### ❄️ **Using Snowflake**
+
+1. Log in to your **Snowflake** account 🌐
+2. Navigate to `worksheets` > `+ worksheet` 📝
+3. On the top right, select the role `ACCOUNTADMIN.AIRBYTE_WAREHOUSE` 🔐
+4. On the top left of the worksheet, select `AIRBYTE_DATABASE.AIRBYTE_SCHEMA` 📚
+5. Query one of the synced tables from Airbyte
+
+---
+
+### 📈 **Using dbt**
+
+1. Navigate to the `dagster/dbt_warehouse` directory 📁
+2. Run the following commands to generate and serve the dbt documentation:
+   ````bash
+   dbt docs generate
+   dbt docs serve
+   ``` 🎯 This will also allow you to view the lineage graph 📊
+   ````
 3. Execute the command `dbt build` to run and test dbt models
 
-## Using Dagster
+---
 
-## Using dagster
+### 🧩 **Using Dagster**
 
 1. `cd` to `dagster/analytics`
 2. Execute the command `dagit` to launch the dagit user interface
