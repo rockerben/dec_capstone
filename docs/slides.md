@@ -1,10 +1,3 @@
----
-marp: true
-title: CAPSTONE: Real-Time Development Application Data Pipeline for NSW Council Insights  
-theme: uncover
-paginate: true
----
-
 ### CAPSTONE: Real-Time Development Application Data Pipeline for NSW Council Insights
 
 | Author                                          |
