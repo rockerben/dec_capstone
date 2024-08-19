@@ -26,6 +26,8 @@
 
 ![airbyte](docs/airbyte.png)
 &nbsp;
+![airbyteui](docs/airbyte_ec2_ui.png)
+&nbsp;
 ![airbyte2](docs/airbyte2.png)
 &nbsp;
 ![airbyte3](docs/airbyte3.png)
@@ -39,6 +41,10 @@
 ![airbyte7](docs/airbyte7.png)
 &nbsp;
 ![airbyte8](docs/airbyte8.png)
+&nbsp;
+![airbyte9](docs/airbyte_ec2.png)
+&nbsp;
+![airbyte10](docs/airbytesnowflakeconnection.png)
 &nbsp;
 
     Run an extract in Airbyte to have data in Snowflake (localhost ok) - use the UI to run the sync
@@ -145,6 +151,10 @@ pip install -e ".[dev]"
 &nbsp;
 ![dagster4](docs/dagster_cloud_error4.png)
 &nbsp;
+![dagster5](docs/dagster_cloud_waitlist_error1.png)
+&nbsp;
+![dagster1](docs/dagster_cloud.png)
+&nbsp;
 
 | 17. _Other stuff_ |
 | ----------------- |
@@ -155,6 +165,9 @@ pip install -e ".[dev]"
 
 | _artifacts_ |
 | ----------- |
+
+![powerbi](docs/power_bi_setup.png)
+&nbsp;
 
 ![artfct1](docs/snowflake1.png)
 &nbsp;
@@ -173,6 +186,8 @@ pip install -e ".[dev]"
 ![artfct8](docs/snowflake8.png)
 &nbsp;
 ![artfct9](docs/snowflake9.png)
+&nbsp;
+![artfct10](docs/aws_ec2.png)
 &nbsp;
 
 | _To do_ |
