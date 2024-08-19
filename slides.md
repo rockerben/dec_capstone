@@ -18,7 +18,7 @@ Think of it as a **seamless integration extravaganza**, with automated data upda
 
 ### **Objective**
 
-To wrangle the **DA Open APIs** into a **super-slick data pipeline** that fetches, stores, and processes development application data faster than a **dancing kangaroo on caffeine**. We’ll use this data to whip up insights, conjure metrics, and help **The Hills Shire Council** stay **ahead of the curve** in urban planning and development monitoring.
+To wrangle the **DA Open APIs** into a **super-slick data pipeline** that fetches, stores, and processes development application data faster than a **dancing kangaroo on caffeine**. We’ll use this data to whip up insights, conjure metrics, and help my workplace stay **ahead of the curve** in urban planning and development monitoring.
 
 ---
 
@@ -99,6 +99,8 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 **Data Broker EMAIL:**  
 [data.broker@environment.nsw.gov.au](mailto:data.broker@environment.nsw.gov.au)
 
+![broker_email](docs/broker_email.png)
+
 ---
 
 ### **Solution Architecture**
@@ -109,71 +111,96 @@ The DA Open APIs dataset can help answer a variety of key questions that provide
 
 # Proof of Work
 
-1. **Install Airbyte on EC2**
-   ![assets/airbyte_ec2_instance.png](airbyte_ec2_instance.png)
-
-2. **Create a Postgres RDS**
-   ![assets/rds_postgres.png](rds_postgres.png)
-
-   ![assets/pgadmin_rds.png](pgadmin_rds.png)
-
-3. **Create Airbyte Source Connection (Postgres)**
-   ![assets/airbyte_postgres_rds_connection.png](airbyte_postgres_rds_connection.png)
-
-4. **Create Airbyte Destination Connection (Snowflake)**
-   ![assets/airbytesnowflakeconnection.png](airbytesnowflakeconnection.png)
-
-5. **Test Extract/Load**
-
-   1. **Airbyte UI**
-      ![assets/airbyte_ec2_sync_test.png](airbyte_ec2_sync_test.png)
-
-   2. **Airbyte API (Python project)**
-      ![assets/AirbyteAPIPython.png](AirbyteAPIPython.png)
-
-6. **Build containers**
-   ![assets/ECR_containers.png](ECR_containers.png)
-
-7. **Trigger the ECS (manual test)**
-   ![assets/ECR_containers.png](ECR_containers.png)
-
-8. **DBT Modelling**
-   ![assets/DBT.png](DBT.png)
-
-9. DBT Python Config
-   ![assets/DBTPython.png](DBTPython.png)
-
-10. Run Pipeline (set schedules)
-    ![assets/screenshot1.png](screenshot1.png)
-
 ---
-
-# GIT
-
-- [GIT Repository](https://github.com/rockerben/de-project2)
-
-- Activity (6 branches, 7 merged pull requests and ~60 commits)
-
----
-
-## Tasks
 
 | ELT Pipeline |
 | ------------ |
 
-1. Time management
-2. Install Airbyte on EC2
-3. Create an Airbyte connection to Snowflake
-4. Create a Postgres RDS
-5. Airbyte API (using Python) - ECR, ECS to Extract and Load
-6. Test Python engine
-7. Develop Snowflake/DBT Tasks
-8. DBT run (using Python) ECR, ECS to Transform
-9. Pipeline Testing
+##### Github, Airbyte, Snowflake, Dbt, Dagster
 
-| Project Delivery |
-| ---------------- |
+---
 
-1. Setup and clean Scaffold
-2. Solution Architecture
-3. Project Presentation Materials
+| Tasks |
+| ----- |
+
+1. **Select API**
+
+   ![postman](docs/postman.png)
+
+2. **Setup Airbyte to Snowflake connection**
+
+   - Source - I used this as reference to help me build the custom connector (https://www.youtube.com/watch?v=IG0B8WXIQgs)
+
+   - Destination - we all have a snowflake destination connector setup
+   - Connection - straight forward
+
+   ![airbyte](docs/airbyte.png)
+
+   ![airbyte2](docs/airbyte2.png)
+
+   ![airbyte3](docs/airbyte3.png)
+
+   ![airbyte4](docs/airbyte4.png)
+
+   ![airbyte5](docs/airbyte5.png)
+
+   ![airbyte6](docs/airbyte6.png)
+
+   ![airbyte7](docs/airbyte7.png)
+
+   ![airbyte8](docs/airbyte8.png)
+
+   Run an extract in Airbyte to have data in Snowflake (localhost ok) - use the UI to run the sync
+
+3. **Create a Git Repo**
+
+   - [GIT Repository](https://github.com/rockerben/dec_capstone/)
+
+4. **Create a virtual enviroment**
+   - dagster requirements
+     - conda create -n dagster python=3.11
+     - conda activate dagster
+   - dbt requirements
+     - pip install dbt-core==1.7.0
+     - pip install dbt-snowflake==1.7.0
+5. **Scaffold a dagster project**
+
+   - 2024-04-bootcamp/10-dagster/1/01-ins-ops-jobs/instruction/README.md
+
+6. **Scaffold a dbt project**
+
+   - Video reference: 20240618 @40:00 minute mark
+   - 2024-04-bootcamp/06-snowflake-dbt/3/01-evr-dbt-setup/instruction/README.md
+
+7. **_create 1 dbt model and run_**
+8. **_configure dbt-dagster integration_**
+9. **_test dagster_**
+10. **_build dbt dim models_**
+11. **_build dbt fact models_**
+12. **_test run dbt models_**
+13. **_build the one big table_**
+14. **_setup dagster-airbyte integration_**
+15. **_setup dagster-dbt integration_**
+16. **_test run dagster_**
+17. **_setup dagster cloud_**
+
+18. **_Other stuff_**
+
+    - Documentation
+    - Solution Architecture
+    - Project Presentation Materials
+
+19. To do:
+
+    - Dagster deepdive
+    - Data Vault deepdive
+    - Incremental Models
+    - Data Testing
+
+20. To be continued:
+    - CICD
+    - Kafka learning
+    - Databricks/spark learning
+    - preset
+
+---
