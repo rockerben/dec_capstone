@@ -167,9 +167,6 @@ dagster dev
 | _artifacts_ |
 | ----------- |
 
-![powerbi](docs/power_bi_setup.png)
-&nbsp;
-
 ![artfct1](docs/snowflake1.png)
 &nbsp;
 ![artfct2](docs/snowflake2.png)
