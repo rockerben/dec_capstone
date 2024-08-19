@@ -157,7 +157,7 @@ pip install -e ".[dev]"
 | ------- |
 
 - Dagster deepdive
-- Data Vault deepdive
+- Data Vault
 - Incremental Models
 - Data Testing
 
